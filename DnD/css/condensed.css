@@ -1,0 +1,44 @@
+@media print {
+	body {
+		font-size: 10px;
+	}
+
+	p {
+		margin-bottom: 6px;
+	}
+
+	.page {
+		page-break-after: always;
+	}
+
+	.table p {
+		margin-bottom: 0px;
+	}
+
+	.table {
+		margin-bottom: 7px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h4 {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-bottom: 7px;
+	}
+
+	.action {
+		margin-bottom: 5px;
+	}
+
+	.action p {
+		margin-bottom: 5px;
+	}
+
+	.action .action-heading + p::after {
+		margin: 0 0 5px;
+	}
+}
+

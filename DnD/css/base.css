@@ -1,0 +1,63 @@
+@media print {
+	body {
+		font-size: 12px;
+	}
+
+	p {
+		margin-bottom: 6px;
+	}
+
+	.page {
+		page-break-after: always;
+	}
+
+	.table p {
+		margin-bottom: 0px;
+	}
+
+	.table {
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+}
+
+.action {
+	margin-bottom: 10px;
+}
+
+.action .action-heading {
+	display: inline;
+	font-weight: bold;
+	margin-right: 0.4em;
+}
+
+ .action .action-heading + p {
+	display: inline;
+}
+
+.action .action-heading + p::after {
+	content: "";
+	display: block;
+	margin: 0 0 10px;
+}
+
+.ability-check {
+	font-style: italic;
+}
+
+.action p.ability-check {
+	margin-left: 2em;
+}
