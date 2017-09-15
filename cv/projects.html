@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/page.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+	</head>
+
+	<body>
+		<style>
+			figure {
+				margin: 5px;
+				margin-top: 0px;
+				margin-bottom: 15px;
+			}
+
+			figure > img {
+				box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.1), 0px 0px 2px 0px rgba(0,0,0,0.3);
+			}
+
+			figcaption {
+				padding: 5px;
+			}
+
+			.lead {
+				font-size: 14px;
+			}
+		</style>
+
+		<div class="page-container container">
+			<h1>Projects</h1>
+
+			<h2>Shell Database</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<p>
+						The goal of this project was to modernise the record keeping
+						for a large sea shell collection. A specimen is worthless
+						without details of when and where it was collected.
+						Furthermore, scientific consensus on taxonomy
+						changes as more research is done, so it often becomes
+						necessary to update the classification of specimens in the
+						database.
+					</p>
+					<p>
+						This was previously done with paper records, and while much of
+						the data had been shifted into Word documents, this was prone
+						to errors and difficult to search. Past attempts at setting up
+						an Access database had been rejected because they were too
+						hard to use.
+					</p>
+					<p>
+						To solve this, a modern web application was designed
+						and developed that would make it easy to add and
+						update records, while helping to ensure consistent
+						spellings and avoiding accidental data loss.
+					</p>
+
+					<p>
+						The database stores a taxonomic tree and efficiently
+						generates all scientific names from this. This
+						normalisation made it much easier to build tools to
+						tidy up the taxonomy, such as moving entire genera
+						between families.
+					</p>
+				</div>
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/shelldb-specimen-editor.png" alt="" class="img-responsive">
+						<figcaption>
+							Collector names autocomplete to reduce typos.
+							Regions are classified into a hierarchy to help
+							with browsing.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/shelldb-worms-update.png" alt="" class="img-responsive">
+						<figcaption>
+							I built tools that can import and update taxa from
+							marinespecies.org using their web API. This
+							greatly speeds up adding new species to the
+							database, can fix incorrectly classified
+							specimens and create synonyms.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/shelldb-filtering.png" class="img-responsive">
+						<figcaption>
+							The real power of a database is to create
+							interesting information. To put these benefits in
+							the user's hands, I developed a system that allows
+							a list of specimens to be filtered, grouped and
+							sorted in various ways.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/shelldb-labels.png" alt="" class="img-responsive">
+						<figcaption>
+							Making labels for shell shows, or for labelling
+							drawers and trays is tedious work. The label sheet
+							feature takes the hassle out by handling the
+							formatting, and keeps the labels up-to-date
+							if the specimen is updated.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/shelldb-taxon-selector.png" alt="" class="img-responsive">
+						<figcaption>
+							As the app used tree structures for the taxonomy and
+							regions, a UI widget was needed in several places to
+							browse and select a taxon/region. I used the file
+							browser paradigm with a search box limited to the
+							current subtree.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-container container">
+			<h2>Online Wargame</h2>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<p>
+						This is a computer adaptation of a turn-based board game
+						simulating World War 2 at operational scale. A large
+						scenario will have hundreds or thousands of units in play, each
+						unit is a little cardboard chit that get stacked into awkward
+						piles on a vast map.
+					</p>
+					<p>
+						This style of game appeals to a particular hardcore military
+						simulation buff but the impracticality of these large-scale
+						games, and sparse network of players makes computer play-aids
+						or games quite appealing.
+					</p>
+					<p>
+						We aimed to make a more modern solution that captured
+						the aesthetic of the tabletop games, had
+						flexible and easy multiplayer and a complete rules
+						implementation.
+					</p>					
+					<p>
+						Challenges included visualising and communicating
+						information to the players, balancing between fidelity
+						to the board game and what works in a turn-based
+						computer game, and keeping game servers lightweight to
+						reduce operating costs.
+					</p>
+					<p>
+						The game was developed in partnership with a Scottish
+						game developer and the editing toolchain we created
+						could produce output for large-format printing.
+					</p>
+				</div>
+
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/tsww-closeup.png" alt="" class="img-responsive">
+						<figcaption>
+							Fully zoomed in. In the printed game, each hex is about 20mm across, representing roughly 24 miles.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<h3>Map Editor</h3>
+
+			<p class="lead">
+				We created a bespoke editing tool which allowed us to use the
+				same artwork for the computer game and print. Within 8 months
+				we had built this tool from scratch, got it into the hands of
+				our mappers, and met the optimistic deadlines for printing.
+			</p>
+
+			<h4>Noteworthy features</h4>
+			<ul>
+				<li>Imported coastline data from GIS databases</li>
+				<li>Choice of several map projections + rotation to find the best framing for the area you want to map</li>
+				<li>All the niceties you'd expect: multi-step undo/redo (command based), autosave</li>
+				<li>MVC architecture, allowing code reuse in game</li>
+				<li>Fast and fluid: hardware accelerated graphics + efficient updates kept it responsive</li>
+				<li>Sweet zoom and pan controls make moving around a breeze</li>
+				<li>Map out large area, then define map sections for cropping and export</li>
+				<li>Deformer tools to non-destructively fettle coastlines to fit a hex grid</li>
+				<li>File format backwards compatibility: we needed to deliver fast and iterate, compatibility was high priority</li>
+				<li>SVG Export: high quality vector output to render for print</li>
+			</ul>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/tsww-map-editor-1.png" alt="" class="img-responsive">
+						<figcaption>
+							There is no perfect map projection. Our tools
+							implemented several projection functions, and
+							allowed you to rotate the globe and find the right
+							compromise.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-xs-6">
+					<figure>
+						<img src="images/tsww-map-editor-2.png" alt="" class="img-responsive">
+						<figcaption>
+							<p>
+								The editor used a modular MVC architecture which
+								allowed us to reuse the views directly in the
+								game.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

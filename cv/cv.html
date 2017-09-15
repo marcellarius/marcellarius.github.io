@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+</head>
+<body>
+	<style>
+		.lead {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+
+
+		#lead-section {
+			padding-top: 25px;
+		}
+
+		.recent-project {
+			margin-top: 10px;
+		}
+
+		.recent-project h4 {
+			margin-bottom: 5px;
+		}
+
+
+		h2 + .recent-project {
+			margin-top: 0;
+		}
+
+		.contact-footer {
+			border-top: 1px solid #eee;
+			margin-top: 5px;
+			padding-top: 10px;
+			margin-bottom: 0;
+		}
+
+		#download-link {
+			margin-top: 10px;
+			transition: opacity 0.5s ease-in-out;
+			opacity: 0.2;
+		}
+
+		#download-link:hover {
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 767px) {
+			#download-link {
+				opacity: 1;
+				margin-top: 20px;
+			}
+
+			.page-header h1 {
+				margin-top: 10px;
+			}
+
+			#software-dev-title {
+				text-align: left;
+				margin-top: 0;
+			}
+		}
+	</style>
+	<div class="container hidden-print">
+		<a href="SamDouglas-CV.pdf" id="download-link" class="btn btn-link"><span class="glyphicon glyphicon-download"></span> Download as PDF</a>
+	</div>
+
+	<div class="page-container container">
+		<div class="page-header">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6"><h1>Sam Douglas</div>
+				<div class="col-xs-6 col-sm-6"><h1 id="software-dev-title" class="text-right"><small>Software developer</small></h1></div>
+			</div>
+		</div>
+		<p class="lead">
+			I strive to build quality software and user experiences.
+			I have a broad skill set and am not afraid to learn new technologies and
+			techniques to deliver solutions.
+		</p>
+		<div class="row">
+			<div class="col-xs-6 col-sm-6">
+				<section>
+					<h2>Recent Projects</h2>
+										
+					<div class="recent-project">
+						<h4>Sea Shell Database <small>(2015-2017)</small></h4>
+						<p>
+							This project delivers a web application to manage records for a large
+							private sea-shell collection. I built this application from scratch to
+							move specimen records into a well-structured database. The application
+							uses Flask and PostgreSQL. Most of the logic is server-side using Bootstrap 3
+							and Backbone.js in the front-end.
+						</p>
+						<ul>
+							<li>Scraping valuable specimen details from typo-filled text.</li>
+							<li>Providing a fast, easy-to-use interface for non-technical users</li>
+							<li>Trees in a relational DB, with efficient subtree queries</li>
+							<li>Acquire domain knowledge about zoological taxonomy</li>
+							<li>Interfacing with third-party web APIs</li>
+							<li>Full text search, fuzzy/partial matching, typeahead search UI</li>
+							<li>Generating printable specimen labels using HTML/CSS</li>
+						</ul>
+					</div>
+
+					<div class="recent-project">
+						<h4>Job Tracking System <small>(2016)</small></h4>
+						<p>
+							I put this web app together for Eastbay Metering's internal use to
+							track jobs, scanned paperwork, and digital photos. It is a
+							responsive single-page application using Bootstrap, Backbone.js, and a RESTful JSON
+							API provided by a Flask/PostgreSQL back-end.
+						 </p>
+						<ul>
+							<li>Fast, mobile-friendly interface (SPA, history API)</li>
+							<li>Real-time updates, activity event logging</li>
+							<li>File and photo uploads, thumbnailing, drag and drop</li>
+							<li>Flexible admin UI for creation of new job types and actions</li>
+						</ul>
+					</div>
+
+					<div class="recent-project">
+						<h4>Online Computer Wargame <small>(2010-2014)</small></h4>
+						<p>
+							I worked in a small team developing a computer
+							adaptation of a WW2 wargame. We developed this in
+							C# using Direct3D for graphics. My work on this
+							project covered all areas of the game's
+							development including design and technology
+							choices, architecture, graphics, UI, networking,
+							tooling, and web.
+							The editing tools we created also produced maps
+							for professional printing for the board game version.
+						</p>
+						<ul>
+							<li>Building editing tools for creating huge stylised maps</li>
+							<li>Exporting maps for professional printing</li>
+							<li>Understanding and implementing a complex rule set</li>
+							<li>Nested state-machine architecture for UI and game logic</li>
+							<li>Asynchronous network play using cloud-based servers</li>
+							<li>Working with XML. Serialization, custom code generators</li>
+							<li>Integrating the Chromium browser for the game UI</li>
+							<li>Embedded Lua VM and API for scenario scripting</li>
+							<li>.NET performance profiling and analysis</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Employment History</h2>
+					<ul>
+						<li>2014&ndash;July 2017: Eastbay Metering Ltd. <em>Software developer</em></li>
+						<li>2010&ndash;2014: WorldWarGame Ltd. <em>Software developer</em></li>
+						<li>2007&ndash;2009: University of Waikato <em>Sessional assistant</em></li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<section>
+					<h2>Skills and Experience</h2>
+					<ul>
+						<li>7+ years professional software development</li>
+						<li>C#, Python, JavaScript, C/C++, Java, Lua, Lisp/Scheme</li>
+						<li>Web development: Flask (Python), Play Framework (Java)</li>
+						<li>Front-end web: HTML5, CSS3, Backbone.js, Bootstrap, LESS, responsive/mobile-friendly, print</li>
+						<li>Databases: PostgreSQL, SQLite. Design, query optimisation, full text search, schema migration</li>
+						<li>.NET desktop development</li>
+						<li>Testing: NUnit. JUnit, unittest</li>
+						<li>Source control: Git, Mercurial and SVN</li>
+						<li>Functional programming styles, as well as object oriented</li>
+						<li>Graphics and game development: XNA/Direct3D, GPU shader programming, graphics editing</li>
+						<li>Networking: TCP/IP, threaded and polled IO, custom serialization</li>
+						<li>Linux: Apache, uwsgi, PostgreSQL, Samba, rsync, scripting, Debian packaging, OpenVPN</li>
+						<li>Diagnostics, debugging, profiling, disassembly</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Academic</h2>
+					<p>
+						I studied computer science at the University of Waikato from
+						2006&ndash;2010 after receiving a scholarship during high school.  
+					</p>
+					<p>
+						My academic interests were software development, graphics and video games,
+						low-level programming, operating systems, and programming languages. I
+						also took cognitive and perceptual psychology courses through to third year.
+					</p>
+					<p>
+						Starting in my second year I worked as a sessional assistant for the computer
+						science department. This involved helping students understand and debug lab
+						work, marking exercises, and supervising tests.
+					</p>
+					<p> 
+						As part of a summer research placement in the WAND group, I was directly
+						involved with setting up the University's new cluster computer. My work on
+						this included researching, benchmarking, and deploying a cluster filesystem
+						(GlusterFS); as well as learning, packaging, and setting up a job scheduling
+						system (PBS).
+					</p>
+					<p>
+						My honours research project was making a distributed model checker that ran
+						on the cluster, using the combined processing and memory of many computers
+						to verify huge state spaces. My real interest was in the software
+						development aspect rather formal methods research (to my supervisor's
+						disappointment).
+					</p>
+					<p>
+						At the end of 2009 I took an opportunity to work full-time on a video game
+						project, and I studied part-time in 2010. I am two first-year papers short
+						of being eligible to graduate with a BCMS(Hons).
+					</p>
+					<p>
+						During university I took part in several programming
+						competitions, both NZPC and ACM-ICPC South Pacific; as well as machine
+						learning challenges.
+					</p>
+					<hr>
+					<p>
+						I play the drums and bass guitar, enjoy coffee, cooking, tabletop RPGs,
+						video games, cars and sim-racing. I'm comfortable repairing things and can
+						brandish a screwdriver, spanner or soldering iron if needed.
+					</p>
+				</section>
+			</div>
+		</div>
+		<div class="contact-footer">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6">
+					sam.douglas32@gmail.com <br> 
+					027-210-6562 <br>
+					github.com/marcellarius
+				</div>
+				<div class="col-xs-6 col-sm-6 text-right">
+					23 Sheridan Street <br>
+					Hamilton
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-xs-6">
+				<h3>Academic Marks</h3>
+				<p> 
+					As explained in the academic section of my CV, while I have
+					completed most of the study towards a BCMS(Hons) at the University
+					of Waikato, I am still a couple of 1st year papers short of the
+					Honours degree.
+				</p>
+				
+				<h4>Computer Science</h4>
+				<ul class="list-unstyled">
+					<li>COMP501 (Topics in Operating Systems): A+</li>
+					<li>COMP520 (Report of an Investigation): B+</li>
+					<li>COMP521 (Machine Learning Algorithms): A+</li>
+					<li>COMP536 (Advanced Graphics and Computer Games): A+</li>
+					<li>COMP551 (Model Based Testing): A+</li>
+					<li>COMP562 (2009: Information Visualisation): B+</li>
+					<li>COMP562 (2010: Agile Methods): A</li>
+				</ul>
+				<ul class="list-unstyled">
+					<li>COMP311 (Computer Systems Architecture): A-</li>
+					<li>COMP316 (Artificial Intelligence Techniques and Applications): B</li>
+					<li>COMP317 (Design and Analysis of Algorithms): A-</li>
+					<li>COMP452 (Model Checking): B+</li>
+					<li>COMP461 (Discrete Event Simulations): B-</li>
+				</ul>
+				
+				<ul class="list-unstyled">
+					<li>COMP201 (Computer Systems): A+</li>
+					<li>COMP235 (Logic and Computation/Discrete Mathematics): C</li>
+					<li>COMP241 (Software Engineering Development): A</li>
+					<li>COMP242 (Software Engineering Process): A+</li>
+				</ul>
+				
+				<ul class="list-unstyled">
+					<li>COMP103: (Introduction to Computer Science 1): A+</li>
+					<li>COMP134: (Software Engineering 1): A+</li>
+				</ul>
+				
+				<h4>Mathematics</h4>
+				<ul class="list-unstyled">
+					<li>MATH253 (Linear Algebra): A-</li>
+					<li>MATH101 (Introduction to Calculus): B-</li>
+					<li>MATH102 (Introduction to Algebra): B</li>
+					<li>STAT121 (Introduction to Statistical Methods): C</li>
+				</ul>
+				
+				<h4>Other</h4>
+				<ul class="list-unstyled">
+					<li>PSYC103 (General and Experimental Psychology): A</li>
+					<li>PSYC226 (Perception and Attention): A-</li>
+					<li>PSYC227 (Physiological Psychology): B-</li>
+					<li>PSYC230 (Cognitive Psychology): A-</li>
+					<li>PSYC305 (Applied Cognition and Neuroscience): C+</li>
+				</ul>
+				
+				<ul class="list-unstyled">
+					<li>PHIL103 (Critical Reasoning): B+</li>
+				</ul>
+			</div>
+			<div class="col-xs-6">
+				<h3>Referees</h3>
+
+				<h4>David Tebbutt <br>
+				<small>Director, WorldWarGame Ltd.</small></h4>
+				<dl>
+					<dt>Phone</dt>
+					<dd>021 912 346</dd>
+
+					<dt>Email</dt>
+					<dd>vonzelene@gmail.com</dd>
+				</dl>
+
+				<h4>Derrick Crosby <br>
+				<small>Director, Eastbay Metering Ltd.</small>
+				</h4>
+				<dl>
+					<dt>Phone</dt>
+					<dd>021 161 9565</dd>
+
+					<dt>Email</dt>
+					<dd>dcrosby@realise.co.nz</dd>
+				</dl>
+
+				<h4>Daniel Tebbutt <br>
+				<small>Colleague at WorldWarGame Ltd.</small></h4>
+				<dl>
+					<dt>Phone</dt>
+					<dd>022 08 35253</dd>
+
+					<dt>Email</dt>
+					<dd>daniel@tebbutt.nz</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
